@@ -1,12 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页</title>
+    <title>LY的个人网站</title>
+    <link rel="stylesheet" href="style/step1.css1">
+    <link rel="stylesheet" href="style/step2.css1">
+    <link rel="stylesheet" href="style/step3.css1">
+    <link rel="stylesheet" href="style/step4.css1">
+    <link rel="stylesheet" href="style/step5.css1">
+    <link rel="stylesheet" href="style/step6.css1">
+    <link rel="stylesheet" href="style/step7.css1">
+    <link rel="stylesheet" href="style/step8.css1">
+    <link rel="stylesheet" href="style/step9.css1">
+    <link rel="stylesheet" href="style/step10.css1">
+    <link rel="stylesheet" href="style/step11.css1">
+    <link rel="stylesheet" href="style/step12.css1">
+    <link rel="stylesheet" href="style/step13.css1">
+    <link rel="stylesheet" href="style/step14.css1">
+    <link rel="stylesheet" href="style/step15.css1">
+    <link rel="stylesheet" href="style/step16.css1">
+    <link rel="stylesheet" href="style/step17.css1">
+    <link rel="stylesheet" href="style/step18.css1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .container-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: none;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 40px;
+        }
+
+        .nav-link {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .site-title {
+            font-weight: bold;
+        }
+
+        .nav {
+            background: #fff;
+            height: 60px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .nav li:hover {
+            border-bottom: 1px solid #DE3712;
+        }
+
+        .nav-link:hover {
+            color: #DE3712;
+        }
+
+        main {
+            margin-top: 120px;
+        }
+
+        .bq {
+            width: 60%;
+            margin: 120px auto;
+        }
+
+        .intro {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .avatar {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 100px;
+        }
+
+        .name {
+            margin-bottom: 12px;
+        }
+
+        .bio {
+            color: gray;
+        }
+
+        .small {
+            font-size: 12px;
+            text-align: center;
+            color: gray;
+            margin-bottom: 8px;
+        }
+
+        blockquote {
+            font-size: 23px;
+            font-family: Open Sans;
+            font-style: italic;
+            color: #555555;
+            padding: 18px 30px 18px 75px;
+            border-left: 8px solid #78C0A8;
+            line-height: 1.6;
+            position: relative;
+            background: #EDEDED;
+        }
+
+        blockquote::before {
+            font-family: Arial;
+            content: "\201C";
+            color: #78C0A8;
+            font-size: 64px;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+
+        blockquote::after {
+            content: '';
+        }
+
+        blockquote span {
+            display: block;
+            color: #333333;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul:last-child {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container-flex ul:first-child {
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .bq {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <p>欢迎来到我的主页！</p>
+    <header class="nav">
+        <div class="container container-flex">
+            <ul>
+                <li><a href="#" class="nav-link site-title">个人网站</a></li>
+            </ul>
+            <ul>
+                <li><a href="./resume.html" class="nav-link">简历</a></li>
+                <li><a href="#" class="nav-link">工作经验</a></li>
+                <li><a href="#" class="nav-link">项目经验</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="intro">
+                <img class="avatar" src="./img/dog.jpg" alt="我的头像">
+                <h2 class="name">LYy</h2>
+                <p class="bio">前瓦洛兰特职选手，擅长猎枭，团队信息位兼指挥。</p>
+            </div>
+
+            <div class="bq">
+                <p class="small">我最喜欢的一句话</p>
+                <blockquote>
+                    We can not solve our problems with the same level of thinking that created them.
+                    <span> - Albert Einstein</span>
+                </blockquote>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
