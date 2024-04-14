@@ -5,3 +5,11 @@
     border-radius: 50%; /* 设置圆形头像 */
     width: 100px; /* 设置头像宽度为100px */
 }
+.avatar:hover{
+    width: 120px;
+    transition: 1s;
+}
+.avatar{
+    width: 100px;
+    transition: 1s;
+}
