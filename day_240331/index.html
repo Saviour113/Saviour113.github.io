@@ -49,18 +49,37 @@
             <div class="intro">
                 <img class="avatar" src="./img/dog.jpg" alt="我的头像">
                 <h2 class="name">LYy</h2>
-                <p class="bio">现瓦洛兰特职业选手，擅长猎枭，团队信息位兼指挥。</p>
+                <p class="bio">现Valorant职业选手，擅长猎枭，团队信息位兼指挥。</p>
             </div>
 
             <div class="bq">
                 <p class="small">我最喜欢的一句话</p>
                 <blockquote>
                     We can not solve our problems with the same level of thinking that created them.
-                    <span> - Albert Einstein</span>
+                    <a href="https://baike.baidu.com/item/%E9%98%BF%E5%B0%94%E4%BC%AF%E7%89%B9%C2%B7%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6/127535?fr=ge_ala"
+                        class="Einstein" target="_blank" title="点击此处了解更多关于Einstein"><span> - Albert Einstein</span></a>
                 </blockquote>
             </div>
         </div>
     </main>
+    <audio autoplay loop src="./video/Imagine Dragons,Broiler - Shots (Broiler Remix).mp3" id="myaudio"></audio>
+    <button id="playButton">停止播放</button>
+    <script>
+        const audio = document.getElementById('myaudio');
+        const playButton = document.getElementById('playButton');
+        let isPlaying = true;
+        playButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause(); // 停止播放音乐
+                isPlaying = false;
+                playButton.innerText = '播放音乐';
+            } else {
+                audio.play(); // 播放音乐
+                isPlaying = true;
+                playButton.innerText = '停止播放';
+            }
+        });
+    </script>
 
 </body>
 

@@ -6,3 +6,6 @@ blockquote span {
     font-weight: bold; /* 设置字体加粗 */
     margin-top: 16px; /* 上方外边距为16px */
 }
+.Einstein{
+   text-decoration: none;
+}
