@@ -62,12 +62,12 @@
             </div>
         </div>
     </main>
-    <audio  loop src="./video/Imagine Dragons,Broiler - Shots (Broiler Remix).mp3" id="myaudio"></audio>
+    <audio autoplay loop src="./video/Imagine Dragons,Broiler - Shots (Broiler Remix).mp3" id="myaudio"></audio>
     <button id="playButton">播放音乐</button>
     <script>
         const audio = document.getElementById('myaudio');
         const playButton = document.getElementById('playButton');
-        let isPlaying = false;
+        let isPlaying = flase;
         playButton.addEventListener('click', function () {
             if (isPlaying) {
                 audio.pause(); // 停止播放音乐
