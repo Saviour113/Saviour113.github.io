@@ -88,7 +88,10 @@ body {
 
 /* 邮箱和电话样式 */
 .header .email,
-.header .phone {
+.header .phone,
+.header .github,
+.header .gitee,
+.header .Home{
     /* 文字颜色 */
     color: #999;
     /* 字体细体 */
